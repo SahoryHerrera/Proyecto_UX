@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar sesión</title>
+<link href="img/logomini.png" rel="shortcut icon">
+<link href="css/framework7.bundle.min.css?v=<?php echo(rand()); ?>" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+	
+	<div id="app">
+		<div class="view view-main view-init">
+			<section data-name="iniciar" class="page">
+				<section id="iniciar" class="page-content">
+					
+					<nav class="navbar">
+						<div class="navbar-bg"></div>
+						<div class="navbar-inner">
+							<div class="left">
+								<a href="/inicio/" class="link back"><span class="material-icons">arrow_back_ios_new</span></a>
+							</div>
+							<div class="title">
+								Iniciar sesión
+							</div>
+							<div class="right"></div>
+						</div>
+					</nav>
+					
+					<section id="form">
+						<div class="block">
+							<div class="list inset">
+								  
+									  <div class="item-inner">
+										<div class="item-input-wrap">
+											<label><h3>Nombre</h3></label>
+										  <input type="text" placeholder="Escribe tu nombre.">
+										</div>
+									  </div>
+									
+									
+									  <div class="item-inner">
+										<div class="item-input-wrap">
+											<label><h3>Contraseña</h3></label>
+										  <input type="password" placeholder="Ingresa tu contraseña.">
+										</div>
+									  </div>
+							</div>
+							<p class="olvidaste"><a href="/olvido/">¿Olvidaste tu contraseña?</a></p>
+							<p><center>Al continuar, aceptas nuestros <a>Términos de servicio</a> y <a>Política de privacidad</a>.</center></p>
+						</div>
+					</section>
+					<div class="block">
+						
+						<a href="/homepage/" class="button button-fill boton-crearcuenta"><p>Iniciar</p></a>
+					</div>
+				</section>
+			</section>
+		</div>
+	</div>
+	
+	
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="js/app.js?v=<?php echo(rand()); ?>"></script>
+</body>
+</html>

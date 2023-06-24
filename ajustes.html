@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajustes</title>
+<link href="img/logomini.png" rel="shortcut icon">
+<link href="css/framework7.bundle.min.css?v=<?php echo(rand()); ?>" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+	
+	<div id="app">
+		<div class="view view-main view-init">
+			<section data-name="ajustes" class="page">
+				<section id="ajustes" class="page-content">
+					
+					<nav class="navbar">
+						<div class="navbar-bg"></div>
+						<div class="navbar-inner">
+							<div class="left">
+								<a href="/inicio/" class="link back"><span class="material-icons">arrow_back_ios_new</span></a>
+							</div>
+							<div class="title">
+								Ajustes
+							</div>
+							<div class="right"></div>
+						</div>
+					</nav>
+					
+					<section id="Ajuste">
+					
+					<div class="block">
+						<h2>Ajustes del dispositivo</h2>
+						<a href="" class="ac-1 button button-fill boton-perfil"><p><span class="material-symbols-rounded iconos">language</span> Idioma </p></a> 
+						<a href="/moneda/" class="button button-fill boton-perfil"><p><span class="material-symbols-rounded iconos">currency_exchange</span>  Moneda</p></a> 
+						<a href="" class="button button-fill boton-perfil"><p><span class="material-symbols-rounded iconos">notifications</span> Notificaciones</p></a> 
+						<br>
+						<h2>Información</h2>
+						<a href="" class="button button-fill boton-perfil"><p>Política de privacidad</p></a> 
+						<a href="" class="button button-fill boton-perfil"><p>Preguntas y respuestas</p></a> 
+						<a href="" class="button button-fill boton-perfil"><p>Términos y condiciones</p></a>
+					</div>
+						
+					</section>
+					
+					
+					
+				</section>
+			</section>
+		</div>
+	</div>
+	
+	
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="js/app.js?v=<?php echo(rand()); ?>">
+	$$('.ac-1').on('click', function () {
+    ac1.open();
+});
+	</script>
+</body>
+</html>

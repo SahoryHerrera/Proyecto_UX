@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservas</title>
+<link href="img/logomini.png" rel="shortcut icon">
+<link href="css/framework7.bundle.min.css?v=<?php echo(rand()); ?>" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+	
+	<div id="app">
+	<div class="view view-main view-init">
+	<section data-name="reservas" class="page">
+		
+		<nav class="toolbar toolbar-bottom tabbar tabbar-labels">
+				  <div class="toolbar-inner">
+					<a href="/homepage/" class="link">
+						<span class="material-symbols-rounded">home</span>
+
+					</a>
+					<a href="/reservas/" class="link">
+						<span class="material-symbols-rounded">luggage</span>
+
+					</a>
+					<a href="/favoritos/" class="link">
+						<span class="material-symbols-rounded">favorite</span>
+					</a>
+					<a href="/perfil/" class="link">
+						<span class="material-symbols-rounded">account_circle</span>
+					</a>
+				  </div>
+				</nav>
+			<section id="reservas" class="page-content">
+				
+				<section id="buscar">
+					<div class="block">
+						<h1 class="titulo">Reservaciones</h1>
+						<div class="list inset">
+
+										  <div class="item-inner">
+											<div class="item-input-wrap">
+											  <input placeholder="Últimos 30 días" class="textbox-n" type="text" onfocus="(this.type='date')">
+											</div>
+										  </div>
+
+										<a href="#" class="button button-fill boton-buscar">Buscar</a>
+									</div>
+						
+					</div>
+				</section>
+				<div class="recomendados block">
+					<div class="card card-outline">
+					 
+						  <div class="card-header demo-card-header-pic"></div>
+						  <div class="card-content card-content-padding">
+							  <div class="row">
+							  	<div class="col-60">
+								  <a href="/sitio/">Apart. Guijarros<br></a>
+								</div>
+								  <div class="col-40">
+								  <p>L. 540/Noche</p>
+								  </div>
+							  </div>
+							  <span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span> <br>
+							  <p>16/05/2023</p>
+							  <p><span class="material-symbols-rounded iconos">location_on</span> Torre Atenea</p>
+						  </div>
+						  
+						
+					</div>
+				
+				</div>
+			</section>
+		</section>
+	
+	
+		
+	
+	</div>
+	
+	</div>
+	
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="js/app.js?v=<?php echo(rand()); ?>"></script>
+</body>
+</html>
+

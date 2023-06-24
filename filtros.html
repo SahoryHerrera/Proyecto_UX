@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filtros</title>
+<link href="img/logomini.png" rel="shortcut icon">
+<link href="css/framework7.bundle.min.css?v=<?php echo(rand()); ?>" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+	<div id="app">
+	<div class="view view-main view-init">
+	<section data-name="filtros" class="page">
+			<section id="filtros" class="page-content">
+				<nav class="navbar">
+						<div class="navbar-bg"></div>
+						<div class="navbar-inner">
+							<div class="left">
+								<a href="/inicio/" class="link back"><span class="material-icons">arrow_back_ios_new</span></a>
+							</div>
+							<div class="title">
+								Filtros
+							</div>
+							<div class="right"></div>
+						</div>
+					</nav>
+				<section id="filtrar">
+					<div class="block">
+						
+						<div class="list simple-list">
+							<h3>Rango de precio</h3>
+						  <ul>
+							<li class="item-row">
+							  <div class="item-cell width-auto flex-shrink-0">
+								<i class="icon f7-icons if-not-md">money_dollar_circle</i>
+								<i class="icon material-icons md-only">attach_money</i>
+							  </div>
+							  <div class="item-cell item-cell-shrink-3">
+								<!-- Dual range slider with all the parameters passed via data- attributes -->
+								<div
+								  id="price-filter"
+								  class="range-slider range-slider-init color-lightblue"
+								  data-label="true"
+								  data-dual="true"
+								  data-min="0"
+								  data-max="500"
+								  data-step="1"
+								  data-value-left="200"
+								  data-value-right="400"
+								></div>
+							  </div>
+							  <div class="item-cell width-auto flex-shrink-0">
+								<i class="icon f7-icons if-not-md">money_dollar_circle_fill</i>
+								<i class="icon material-icons md-only">monetization_on</i>
+							  </div>
+							</li>
+						  </ul>
+						</div>
+						<hr>
+						<h3>Puntaje</h3>
+						<div class="row">
+							<div class="col"><a href="#" class="button button-fill boton-puntaje">1 <span class="material-symbols-rounded iconos">star</span></a></div>
+							<div class="col"><a href="#" class="button button-fill boton-puntaje">2 <span class="material-symbols-rounded iconos">star</span></a></div>
+							<div class="col"><a href="#" class="button button-fill boton-puntaje">3 <span class="material-symbols-rounded iconos">star</span></a></div>
+							<div class="col"><a href="#" class="button button-fill boton-puntaje">4 <span class="material-symbols-rounded iconos">star</span></a></div>
+							<div class="col"><a href="#" class="button button-fill boton-puntaje">5 <span class="material-symbols-rounded iconos">star</span></a></div>
+						  </div>
+						<hr>
+						<h3>Tipo de alojamiento</h3>
+						<div class="row">
+							<div class="col-75">
+								<p>Lugar entero</p>
+								<p class="subtitulo">Un lugar para ti solo.</p>
+							</div>
+							<div class="col-25">
+								<input type="checkbox">
+							</div>
+							
+							<div class="col-75">
+								<p>Cuarto</p>
+								<p class="subtitulo">Un cuarto propio y áreas comunes compartidas.</p>
+							</div>
+							<div class="col-25">
+								<input type="checkbox">
+							</div>
+							
+							<div class="col-75">
+								<p>Cuarto compartido</p>
+								<p class="subtitulo">Un espacio para dormir compartido.</p>
+							</div>
+							<div class="col-25">
+								<input type="checkbox">
+							</div>	
+						</div>
+						
+						<hr>
+						<h3>Habitaciones y camas</h3>
+						<h4>Habitaciones</h4>
+						 <div class="stepper stepper-init color-black">
+							<div class="stepper-button-minus"></div>
+							<div class="stepper-input-wrap">
+							  <input type="text" value="0" min="0" max="10" step="1" readonly>
+							</div>
+							<div class="stepper-button-plus"></div>
+						  </div>
+						
+						<h4>Camas</h4>
+						 <div class="stepper stepper-init color-black">
+							<div class="stepper-button-minus"></div>
+							<div class="stepper-input-wrap">
+							  <input type="text" value="0" min="0" max="10" step="1" readonly>
+							</div>
+							<div class="stepper-button-plus"></div>
+						  </div>
+						
+						<h4>Baños</h4>
+						 <div class="stepper stepper-init color-black">
+							<div class="stepper-button-minus"></div>
+							<div class="stepper-input-wrap">
+							  <input type="text" value="0" min="0" max="10" step="1" readonly>
+							</div>
+							<div class="stepper-button-plus"></div>
+						  </div>
+						<hr>
+						<h3>Instalaciones</h3>
+						<div class="row">
+							<div class="col-75">
+								<p>Wifi</p>
+							</div>
+							<div class="col-25">
+								<input type="checkbox">
+							</div>
+							
+							<div class="col-75">
+								<p>Cocina</p>
+							</div>
+							<div class="col-25">
+								<input type="checkbox">
+							</div>
+							
+							<div class="col-75">
+								<p>Piscina</p>
+							</div>
+							<div class="col-25">
+								<input type="checkbox">
+							</div>
+							
+							<div class="col-75">
+								<p>Aire acondicionado</p>
+							</div>
+							<div class="col-25">
+								<input type="checkbox">
+							</div>	
+							
+							<div class="col-75">
+								<p>Calefacción</p>
+							</div>
+							<div class="col-25">
+								<input type="checkbox">
+							</div>	
+							
+							<div class="col-75">
+								<p>TV</p>
+							</div>
+							<div class="col-25">
+								<input type="checkbox">
+							</div>	
+							
+							<div class="col-75">
+								<p>Plancha</p>
+							</div>
+							<div class="col-25">
+								<input type="checkbox">
+							</div>	
+							
+							<div class="col-75">
+								<p>Amigable con las mascotas</p>
+							</div>
+							<div class="col-25">
+								<input type="checkbox">
+							</div>	
+							
+						</div>
+						
+						<a href="/resultados/" class="button button-fill boton-buscar">Aplicar</a>
+						
+					</div>
+				</section>
+			</section>
+		</section>
+	
+	
+		
+	
+	</div>
+	
+	</div>
+	
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="js/app.js?v=<?php echo(rand()); ?>"></script>
+</body>
+</html>

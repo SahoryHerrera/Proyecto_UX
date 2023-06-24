@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crear cuenta</title>
+<link href="img/logomini.png" rel="shortcut icon">
+<link href="css/framework7.bundle.min.css?v=<?php echo(rand()); ?>" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+	<div id="app">
+		<div class="view view-main view-init">
+			<section data-name="crear" class="page">
+				<section id="crear" class="page-content">
+					
+					<nav class="navbar">
+						<div class="navbar-bg"></div>
+						<div class="navbar-inner">
+							<div class="left">
+								<a href="/inicio/" class="link back"><span class="material-icons">arrow_back_ios_new</span></a>
+							</div>
+							<div class="title">
+								Crear cuenta
+							</div>
+							<div class="right"></div>
+						</div>
+					</nav>
+					
+					<section id="form">
+						<div class="block">
+							
+								<div class="list inset">
+								  
+									  <div class="item-inner">
+										<div class="item-input-wrap">
+											<label><h3>Nombre</h3></label>
+										  <input type="text" placeholder="Escribe tu nombre.">
+										</div>
+									  </div>
+									
+									
+									  <div class="item-inner">
+										<div class="item-input-wrap">
+											<label><h3>Correo Electrónico</h3></label>
+										  <input type="email" placeholder="Escribe tu email.">
+										</div>
+									  </div>
+									
+									<div class="item-inner">
+										<div class="item-input-wrap">
+											<label><h3>Fecha de nacimiento</h3></label>
+										  <input type="date" placeholder="Escriba su cumpleaños.">
+										</div>
+									</div>
+									
+									<div class="item-inner">
+										<div class="item-input-wrap">
+											<label><h3>Contraseña</h3></label>
+										  <input type="password" placeholder="Ingresa una contraseña.">
+										</div>
+									</div>
+									
+									<div class="item-inner">
+										<div class="item-input-wrap">
+											<label><h3>Confirmar contraseña</h3></label>
+										  <input type="password" placeholder="Confirma tu contraseña.">
+										</div>
+									</div>
+									
+									
+								</div>
+							
+							
+						</div>
+					</section>
+					<div class="block">
+						<p><center>Al continuar, aceptas nuestros <a>Términos de servicio</a> y <a>Política de privacidad</a>.</center></p>
+						<a href="/homepage/" class="button button-fill boton-crearcuenta"><p>Crear</p></a>
+					</div>
+				</section>
+			</section>
+		</div>
+	</div>
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="js/app.js?2.0"></script>
+	<script>
+			var calendarDefault = app.calendar.create({
+			  inputEl: '#demo-calendar-default',
+			});
+	</script>
+</body>
+</html>
