@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&display=swap');
+:root{
+	--f7-theme-color:#3333CC;
+	--f7-navbar-bg-color: #FFFAF4; /*navbar*/
+	--f7-navbar-text-color:#2F271B;
+	--f7-navbar-link-color: #2F271B;
+	--f7-bars-bg-color:#FFFAF4;/*toolbar*/
+	--f7-tabbar-link-inactive-color: #333; /*link toolbar*/
+	--f7-block-margin-vertical:20px;
+	--f7-card-footer-border-color:#2F271B; 
+  	--f7-card-border-radius: 20px;
+	--f7-card-bg-color: #FFFAF4;
+	--f7-tabbar-label-text-transform: none;
+	--color-morado-main:#242230;
+	--color-beige:#FFFAF4;
+	--color-morado:#5252D4;
+	--color-acento: #BE102A;
+	--f7-list-bg-color: #FFFAF4;
+}
+body{
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 14px;
+	color: #2F271B;
+	background-color: var(--color-beige);
+}
+
+#splash{
+	background-color: #FFFAF4;
+	color: #2F271B;
+	padding: 10%;
+	
+} 
+#splash h1{
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+}
+.swiper-pagination{
+	margin-top: 5%;
+}
+.boton-crearcuenta{
+	background-color:  #993333;
+	color: #FFFAF4;
+	padding: 2% 10% 13%;
+	margin-top: 20%;
+	border-radius: 50px;
+	font-size:20px;
+	font-weight: 400;
+	text-transform: none;
+}
+.iniciarsesion{
+	text-align: center;
+	font-size: 16px;
+	margin-top: 4%;
+}
+.linkiniciar{
+	color: #3333CC;
+	font-weight: 600;
+	text-decoration: underline;
+}
+#form input{
+	border: solid;
+	border-color: #2F271B;
+	padding: 3% 0 3% 2%;
+	border-radius: 10px;
+	margin: 2% 0 5%;
+}
+.boton-ir{
+	background-color:  #993333;
+	color: #FFFAF4;
+	padding: 2% 10% 13%;
+	border-radius: 50px;
+	font-size:20px;
+	font-weight: 400;
+	text-transform: none;
+	margin: 3% 0;
+}
+.boton-reenviar{
+	background-color:  #FFFAF4;
+	color: #993333;
+	padding: 2% 10% 13%;
+	border-radius: 50px;
+	font-size:20px;
+	font-weight: 400;
+	text-transform: none;
+	margin: 3% 0;
+	border-style: solid;
+	border-width: thick;
+	border-color: #993333;
+}
+.olvidaste{
+	font-weight: 800;
+	color: #993333;
+	font-size: 16px;
+	margin-bottom: 5%;
+}
+.olvidaste a{
+	color: #993333;
+}
+
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48;
+	
+	margin-top: 2%;
+	
+}
+.buscadoricon{
+	font-size: 17px;
+}
+
+.boton-buscador{
+	background-color: #FFFAF4;
+	border-style: solid;
+	color: #898989;
+	border-color: #2F271B;
+	border-width: thin;
+	text-align: left;
+	text-transform: inherit;
+	border-radius: 10px;
+	margin: 2% 0;
+	font-size: 17px;
+}
+.boton-cerca{
+	background-color: #993333;
+	color: #FFFAF4;
+	text-align: center;
+	text-transform: inherit;
+	border-radius: 30px;
+}
+.boton-otros{
+	background-color: #9999CC;
+	color: #FFFAF4;
+	text-align: center;
+	text-transform: inherit;
+	border-radius: 30px;
+}
+#categorias h2{
+	font-size: 20px;
+	margin: 5% 0;
+}
+.imagenes{
+	border-radius: 15px;
+	margin: 10% 1% 5%;
+}
+.boton-buscar{
+	background-color: #993333;
+	color: #FFFAF4;
+	text-align: center;
+	text-transform: inherit;
+	border-radius: 30px;
+	font-size:16px;
+	font-weight: 400;
+	margin: 4% 0;
+}
+.boton-vamos{
+	background-color: #F15C73;
+	color: #FFFAF4;
+	font-size: 14px;
+	font-weight: 300;
+	text-transform: capitalize;
+	border-radius: 40px;
+	margin-top: 20px;
+}
+
+#buscar input{
+	border: solid;
+	border-color: #2F271B;
+	padding: 3% 0 3% 2%;
+	border-radius: 10px;
+	margin: 2% 0 5%;
+}
+
+input[type=date], input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=button], select, textarea {
+	border: solid;
+	border-color: #2F271B;
+	padding: 3% 28% 3% 2%;
+	border-radius: 10px;
+	margin: 2% 0 5%;
+	color: #898989;
+	border-width: thin;
+}
+.list input[type=date], .list input[type=datetime-local], .list input[type=email], .list input[type=month], .list input[type=number], .list input[type=password], .list input[type=search], .list input[type=tel], .list input[type=text], .list input[type=time], .list input[type=url], .list input[type=button], .list select {
+    width: 100%;
+    height: var(--f7-input-height);
+    color: var(--f7-input-text-color);
+    font-size: var(--f7-input-font-size);
+    background-color: var(--f7-input-bg-color,transparent);
+    padding-left: var(--f7-input-padding-left);
+    padding-right: var(--f7-input-padding-right);
+}
+.inputs{
+	border: solid;
+	border-color: #2F271B;
+	padding: 3% 0 3% 2%;
+	border-radius: 10px;
+	margin: 2% 0 5%;
+}
+
+.page{
+		background-color: var(--color-beige);
+}
+.img-fluid{
+	max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 2px 0;
+}
+.block-title-medium{
+	font-weight: 700;
+}
+
+#homepage h1{
+	font-size: 24px;
+	font-weight: 700;
+}
+.boton-agregar{
+	border: solid;
+	border-color: #2F271B;
+	background-color: #FFFAF4;
+	color: #2F271B;
+	text-align: center;
+	text-transform: inherit;
+	border-radius: 30px;
+	font-size: 18px;
+	margin: 4% 0;
+}
+.der{
+	text-align: right;
+}
+
+.demo-card-header-pic{
+	background-image:url(../img/fotos/riverview.jpg);
+	 height: 40vw;
+	 background-size: cover;
+	 background-position: center;
+	 color: #fff;
+}
+
+.demo-card-header-pic-2{
+	background-image:url("../img/fotos/guijarro.jpg");
+	 height: 40vw;
+	 background-size: cover;
+	 background-position: center;
+	 color: #fff;
+}
+.demo-card-header-pic-3{
+	background-image:url("../img/fotos/portal.jpg");
+	 height: 40vw;
+	 background-size: cover;
+	 background-position: center;
+	 color: #fff;
+}
+.demo-card-header-pic-4{
+	background-image:url("../img/fotos/Lovely 2-bedroom.png");
+	 height: 40vw;
+	 background-size: cover;
+	 background-position: center;
+	 color: #fff;
+}
+.card-header{
+	padding-top: 100px;
+	
+}
+
+
+.card-header a {
+	color: white;
+	text-shadow: 1px 1px 4px #000;
+}
+
+.titulo{
+	font-size: 24px;
+	text-align: center;
+}
+.parrafo{
+	font-size: 18px;
+	text-align: center;
+}
+.card-outline{
+	border-color: #2F271B;
+}
+.card-outline a{
+	color: #2F271B;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.card-outline p{
+	color: #2F271B;
+	font-size: 15px;
+	
+}
+.iconos{
+	font-size: 16px;
+}
+.boton-puntaje{
+	background-color: #FFFAF4;
+	color: #2F271B;
+	border-color: #2F271B;
+	border-style: solid;
+	border-width: medium;
+	text-align: center;
+	text-transform: inherit;
+	border-radius: 30px;
+	font-size:18px;
+	font-weight: 400;
+	margin: 4% 0;
+	
+}
+hr{
+	margin: 5% 2%;
+
+}
+
+.subtitulo{
+	color: #898989;
+	font-size: 12px;
+}
+
+.stepper-input-wrap input{
+	border-style: none;
+}
+
+.boton-perfil{ 
+	background-color: #FFFAF4;
+	color: #2F271B;
+	border: 2px solid;
+	border-color: #3333CC;
+	padding: 2% 8% 13%;
+	margin-top: 5%;
+	border-radius: 10px;
+	font-size:20px;
+	font-weight: 500;
+	text-transform: none;
+} 
+.perfiltxt{
+	text-align: center;
+	font-size: 16px;
+	margin-top: 4%;
+	
+} 
+#Perfil1{
+	background-color: #9999CC; 
+	color: #FFFAF4; 
+	text-align: center; 
+	font-weight: 100;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	
+} 
+#resenas{
+	background-color: #FFFAF4; 
+	color: #2F271B; 
+	font-weight: 100; 
+	
+	
+} 

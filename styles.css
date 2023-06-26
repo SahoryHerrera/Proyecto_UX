@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --f7-theme-color: #3333CC;
+    --f7-navbar-bg-color: #FFFAF4;
+    /*navbar*/
+    --f7-navbar-text-color: #2F271B;
+    --f7-navbar-link-color: #2F271B;
+    --f7-bars-bg-color: #FFFAF4;
+    /*toolbar*/
+    --f7-tabbar-link-inactive-color: #333;
+    /*link toolbar*/
+    --f7-block-margin-vertical: 20px;
+    --f7-card-footer-border-color: #2F271B;
+    --f7-card-border-radius: 20px;
+    --f7-card-bg-color: #FFFAF4;
+    --f7-tabbar-label-text-transform: none;
+    --color-morado-main: #242230;
+    --color-beige: #FFFAF4;
+    --color-morado: #5252D4;
+    --color-acento: #BE102A;
+    --f7-list-bg-color: #FFFAF4;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    color: #2F271B;
+    background-color: var(--color-beige);
+}
+
+#splash {
+    background-color: #FFFAF4;
+    color: #2F271B;
+    padding: 10%;
+}
+
+#splash h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.swiper-pagination {
+    margin-top: 5%;
+}
+
+.boton-crearcuenta {
+    background-color: #993333;
+    color: #FFFAF4;
+    padding: 2% 10% 13%;
+    margin-top: 20%;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.iniciarsesion {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 4%;
+}
+
+.linkiniciar {
+    color: #3333CC;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+#form input {
+    border: solid;
+    border-color: #2F271B;
+    padding: 3% 0 3% 2%;
+    border-radius: 10px;
+    margin: 2% 0 5%;
+}
+
+.boton-ir {
+    background-color: #993333;
+    color: #FFFAF4;
+    padding: 2% 10% 13%;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: none;
+    margin: 3% 0;
+}
+
+.boton-reenviar {
+    background-color: #FFFAF4;
+    color: #993333;
+    padding: 2% 10% 13%;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: none;
+    margin: 3% 0;
+    border-style: solid;
+    border-width: thick;
+    border-color: #993333;
+}
+
+.olvidaste {
+    font-weight: 800;
+    color: #993333;
+    font-size: 16px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.pie {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-weight: 400;
+    background-color: var(--f7-card-bg-color);
+    border-top: 1px solid var(--f7-card-footer-border-color);
+    padding: 2% 0;
+    width: 100%;
+}
+
+.pie a {
+    text-decoration: none;
+    color: var(--f7-theme-color);
+}
+
+.mensaje-error {
+    color: red;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.card-header {
+    background-color: var(--f7-card-bg-color);
+    color: #2F271B;
+    padding: 4% 2%;
+    border-top-left-radius: var(--f7-card-border-radius);
+    border-top-right-radius: var(--f7-card-border-radius);
+    border-bottom: 1px solid var(--f7-card-footer-border-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card-content-padding {
+    padding: 10%;
+}
+
+.card-footer {
+    background-color: var(--f7-card-bg-color);
+    color: #2F271B;
+    padding: 2% 4%;
+    border-bottom-left-radius: var(--f7-card-border-radius);
+    border-bottom-right-radius: var(--f7-card-border-radius);
+    border-top: 1px solid var(--f7-card-footer-border-color);
+}
+
+.list li {
+    border-bottom: 1px solid var(--f7-card-footer-border-color);
+}
+
+.list li .item-content {
+    padding-left: 10px;
+}
+
+.list li .item-inner {
+    min-height: 48px;
+}
+
+.list li .item-inner .item-title {
+    margin-top: 2px;
+}
+
+.list li .item-media img,
+.list li .item-media svg {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.list ul li:last-child {
+    border-bottom: none;
+}
+
+.list .swipeout-actions-left,
+.list .swipeout-actions-right {
+    margin-top: calc(var(--f7-block-margin-vertical) / 2);
+    margin-bottom: calc(var(--f7-block-margin-vertical) / 2);
+}
+
+.list .swipeout-actions-right {
+    justify-content: flex-end;
+}
+
+.borrar-mensaje {
+    color: #FFFAF4;
+    background-color: #BE102A;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.enviar-mensaje {
+    color: #FFFAF4;
+    background-color: #3333CC;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.chatfoto {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.emoticones {
+    font-size: 20px;
+    color: #993333;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.cuerpomensaje {
+    padding: 0 4%;
+}
+
+.enviarmensaje {
+    margin-top: 4%;
+}
+
+.chat-timestamp {
+    font-size: 12px;
+}
+
+.chat-mensaje-recibido {
+    background-color: #E5E5EA;
+    color: #2F271B;
+    border-radius: 20px;
+    padding: 4% 5%;
+    display: inline-block;
+    max-width: 80%;
+}
+
+.chat-mensaje-enviado {
+    background-color: var(--f7-theme-color);
+    color: #FFFAF4;
+    border-radius: 20px;
+    padding: 4% 5%;
+    display: inline-block;
+    max-width: 80%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
