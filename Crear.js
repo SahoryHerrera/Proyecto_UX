@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Button } from 'react-native';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
 import Homepage from './Homepage';
 
-const Crear = () => {
+const Crear = ({ handleGoBack }) => {
   const [mostrarHomepage, setMostrarHomepage] = useState(false);
 
   const handleCrearPress = () => {
@@ -15,6 +15,10 @@ const Crear = () => {
 
   return (
     <View style={styles.container}>
+      <TouchableOpacity style={styles.backButton} onPress={handleGoBack}>
+        <Text style={styles.backButtonText}>Atrás</Text>
+      </TouchableOpacity>
+
       <Text style={styles.title}>Crear cuenta</Text>
 
       <View style={styles.form}>
@@ -60,6 +64,16 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     backgroundColor: '#FFFFFF',
+  },
+  backButton: {
+    position: 'absolute',
+    top: 10,
+    left: 10,
+    zIndex: 1,
+  },
+  backButtonText: {
+    fontSize: 16,
+    color: '#FF3F34',
   },
   title: {
     fontSize: 24,
